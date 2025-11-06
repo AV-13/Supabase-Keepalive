@@ -1,6 +1,6 @@
 # Supabase Keepalive (GitHub Actions)
 
-Ce dépôt envoie périodiquement une requête HTTP vers vos endpoints publics Supabase pour éviter la mise en pause automatique des projets inactifs.
+Ce dépôt envoie périodiquement une requête HTTP vers des endpoints publics Supabase pour éviter la mise en pause automatique des projets inactifs.
 
 ## ⚙️ Configuration rapide
 
