@@ -1,0 +1,2 @@
+https://xxxx.supabase.co/rest/v1/
+https://yyyy.supabase.co/auth/v1/health

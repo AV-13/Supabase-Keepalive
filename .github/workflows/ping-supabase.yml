@@ -1,0 +1,18 @@
+name: Ping Supabase
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run ping
+        env:
+          PING_URLS: ${{ vars.PING_URLS || secrets.PING_URLS }}
+        run: bash scripts/ping-supabase.sh
